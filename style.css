@@ -1,0 +1,119 @@
+body {
+   margin: 0;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+ul {
+   list-style-type: none;
+   display: flex;
+   gap: 16px;
+}
+
+a {
+   text-decoration: none;
+   color: #e5e7eb;
+}
+
+button {
+   color: #f9faf8;
+   background-color: #3882f6;
+   border-radius: 8px;
+   border-style: none;
+}
+
+.header, .footer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #1f2937;
+   color: #f9faf8;
+}
+
+.header {
+   font-size: 24px;
+}
+
+.header a {
+   font-size: 18px;
+   color: #e5e7eb;
+}
+
+.footer {
+   margin-top: auto;
+   height: 96px;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.intro, .info, .quote, .prompt {
+   padding: 56px 10%;
+}
+
+.intro {
+   display: flex;
+   align-items: center;
+   background-color: #1f2937;
+}
+
+
+.intro-description h1 {
+   font-size: 48px;
+   font-weight: bolder;
+   color: #f9faf8;
+
+}
+
+.intro-description p {
+   font-size: 18px;
+   color: #e5e7eb;
+}
+
+.intro-description {
+   display: flex;
+   flex-direction: column;
+   /* margin-right: 200px; */
+}
+
+.intro-pic {
+   background-color: #4f4f4f;
+   color: white;
+   text-align: center;
+   width: 500px;
+   height: 320px;
+}
+
+.quote {
+   background-color: #e5e7eb;
+   font-size: 36px;
+   font-style: italic;
+   color: #1f2937;
+}
+
+.quote h6 {
+   text-align: end;
+   font-style: normal;
+}
+
+.prompt {
+   display: flex;
+   justify-content: center;
+   background-color: white;
+}
+
+.prompt-box {
+   background-color: #3882f6;
+   color: #f9faf8;
+   border-radius: 8px;
+}
+
+.prompt-box button {
+   border-style: solid;
+   border-width: 1px;
+   border-color: #e5e7eb;
+}
