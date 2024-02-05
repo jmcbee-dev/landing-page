@@ -3,6 +3,7 @@ body {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -21,6 +22,10 @@ button {
    background-color: #3882f6;
    border-radius: 8px;
    border-style: none;
+   font-weight: bold;
+   width: 120px;
+   height: 40px;
+   cursor: pointer;
 }
 
 .header, .footer {
@@ -45,11 +50,6 @@ button {
    height: 96px;
 }
 
-.content {
-   display: flex;
-   flex-direction: column;
-   height: 100%;
-}
 
 .intro, .info, .quote, .prompt {
    padding: 56px 10%;
@@ -58,6 +58,7 @@ button {
 .intro {
    display: flex;
    align-items: center;
+   justify-content: space-around;
    background-color: #1f2937;
 }
 
@@ -66,7 +67,6 @@ button {
    font-size: 48px;
    font-weight: bolder;
    color: #f9faf8;
-
 }
 
 .intro-description p {
@@ -76,16 +76,54 @@ button {
 
 .intro-description {
    display: flex;
+   width: 500px;
    flex-direction: column;
-   /* margin-right: 200px; */
+   gap: 10px;
+}
+
+.intro-description > * {
+   margin: 0;
 }
 
 .intro-pic {
    background-color: #4f4f4f;
    color: white;
    text-align: center;
-   width: 500px;
-   height: 320px;
+   width: 40%;
+   height: auto;
+}
+
+.info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.info-panelist {
+   display: flex;
+   justify-content: space-between;
+   gap: 56px;
+}
+
+.info-pane {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   gap: 10px;
+}
+
+.info-pane > * {   
+   width: 150px;
+   margin-bottom: 0;
+}
+
+.info-pane > div.info-ph {
+   height: 150px;
+   border-color: #3882f6;
+   border-radius: 8px;
+   border-style: solid;
+   border-width: 3px;
 }
 
 .quote {
@@ -95,18 +133,26 @@ button {
    color: #1f2937;
 }
 
+.quote > * {
+   padding: 0 56px;
+   margin: 0;
+}
+
 .quote h6 {
    text-align: end;
    font-style: normal;
 }
 
 .prompt {
-   display: flex;
-   justify-content: center;
    background-color: white;
 }
 
 .prompt-box {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   gap: 56px;
    background-color: #3882f6;
    color: #f9faf8;
    border-radius: 8px;
@@ -116,4 +162,12 @@ button {
    border-style: solid;
    border-width: 1px;
    border-color: #e5e7eb;
+}
+
+.prompt-info {
+   margin: 30px;
+}
+
+.prompt-info > * {
+   margin: 0;
 }
